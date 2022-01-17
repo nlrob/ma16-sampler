@@ -13,4 +13,52 @@ public class MDAReport extends RecordData{
     String getDate;
     String takeDate;
     String resultDate;
+
+    public String getMdaCode() {
+        return this.mdaCode;
+    }
+
+    public String getIdNum() {
+        return this.idNum;
+    }
+
+    public String getIdType() {
+        return this.idType;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getCity() {
+        return this.city;
+    }
+
+    public String getStreet() {
+        return this.street;
+    }
+
+    public String getBuildingNumber() {
+        return this.buildingNumber;
+    }
+
+    public String getBarcode() {
+        return this.barcode;
+    }
+
+    public String getGetDate() {
+        return this.getDate;
+    }
+
+    public String getTakeDate() {
+        return this.takeDate;
+    }
+
+    public String getResultDate() {
+        return this.resultDate;
+    }
 }
