@@ -12,7 +12,7 @@ public class MRExtractor extends Extractor{
         this.srcFile = srcFile;
     }
     //Loads records from CSV file
-    public Set<MDAReport> load() {
+    public Set<MDAReport> extract() {
         HashSet<MDAReport> reports = new HashSet<>();
         try{
             CSVReader csvReader = new CSVReader(new FileReader(this.srcFile));
