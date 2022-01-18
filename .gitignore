@@ -23,8 +23,7 @@
 hs_err_pid*
 
 /src/main/resources/MadaReports.csv
-<<<<<<< HEAD
 /src/main/resources/LabTests.csv
-target/
+target
 lib/
 .idea/
