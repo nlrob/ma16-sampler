@@ -13,6 +13,24 @@ public class LabTest extends RecordData{
     String variant;
     String testType;
 
+    public LabTest(){
+
+    }
+
+    public LabTest(LabTest labTest){
+        this.idNum = labTest.getIdNum();
+        this.idType = labTest.getIdType();
+        this.firstName = labTest.getFirstName();
+        this.lastName = labTest.getFirstName();
+        this.resultDate = labTest.getResultDate();
+        this.birthDate = labTest.getBirthDate();
+        this.labCode = labTest.getLabCode();
+        this.stickerNumber = labTest.getStickerNumber();
+        this.resultTestCorona = labTest.getResultTestCorona();
+        this.variant = labTest.getVariant();
+        this.testType = labTest.getTestType();
+    }
+
     public LabTest(String idNum, String idType, String firstName, String lastName, String resultDate, String birthDate, String labCode,
                    String stickerNumber, String resultTestCorona, String variant, String testType){
         this.idNum = idNum;
