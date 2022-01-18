@@ -21,7 +21,7 @@ public class LabTest extends RecordData{
         this.idNum = labTest.getIdNum();
         this.idType = labTest.getIdType();
         this.firstName = labTest.getFirstName();
-        this.lastName = labTest.getFirstName();
+        this.lastName = labTest.getLastName();
         this.resultDate = labTest.getResultDate();
         this.birthDate = labTest.getBirthDate();
         this.labCode = labTest.getLabCode();
