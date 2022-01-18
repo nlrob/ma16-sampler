@@ -6,7 +6,6 @@ import Records.RecordData;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import dataTransformers.LabTestTransformer;
-import fileExtractors.LTExtractor;
 
 import java.io.File;
 import java.util.HashSet;
@@ -19,12 +18,7 @@ public class LTLoader extends Loader{
         this.fileType = ".xml";
         this.records = records;
     }
-
-    public static void main(String[] args) {
-        LTExtractor ltExtractor = new LTExtractor("C:\\You Know What\\sampler\\src\\main\\resources\\LabTests.csv");
-        LTLoader ltLoader = new LTLoader("C:\\Users\\nlrob\\Documents\\Test\\", "labtest",ltExtractor.extract());
-        ltLoader.load();
-    }
+    //Loads the data into a file
     public void load() {
         int batchCount = 1;
         LabTestTransformer labTestTransformer = new LabTestTransformer();
